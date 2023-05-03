@@ -584,7 +584,6 @@ REase_II	RM_type_II	99.51
 AbiEii	AbiE	99.93
 LmuB	Lamassu_other	3.11
 LmuB	Lamassu_Family	96.47
-Helicase	Helicase-DUF2290	95.34
 GajB	gabija	99.72
 REase_MTase_IIG	DMS_other	8.56
 REase_MTase_IIG	RM_type_IIG	88.61
@@ -766,12 +765,10 @@ Specificity_I	DMS_other	12.76
 Specificity_I	RM_type_I	86.86
 MTase_II	DMS_other	19.75
 MTase_II	RM_type_II	80.25
-Hp1	3HP	67.23
 RT_XIII	retron_II-A	7.2
 RT_XIII	DRT_other	35.55
 RT_XIII	retron_XIII	51.56
 ZorA2	zorya_other	100.0
-TniQ_IF	cas_type_I-F3	94.02
 PD-T4-6	PD-T4-6	100.0
 E1-E2	cbass_type_II	77.83
 E1-E2	pycsar_other	14.08
@@ -909,7 +906,6 @@ LmuB	Lamassu_Family	96.94
 ShosA	ShosTA	98.11
 Orf5	DMS_other	33.41
 Orf5	HEC-06	59.0
-HEC-02A	HEC-02	67.9
 MzaD	mza_other	16.09
 MzaD	mza	83.91
 KwaB	kiwa	98.33
@@ -1090,7 +1086,6 @@ Cas2_IIIa	cas_type_III-D	5.44
 Cas2_IIIa	cas_adaptation	15.41
 Cas2_IIIa	cas_type_III-A	66.92
 Cas2_IIIa	cas_type_other	6.5
-HEC-03A	HEC-03	91.53
 PsyrT	DMS_other	3.03
 PycC	pycsar_effector	99.09
 JetD2	wadjet_type_II	96.5
@@ -1111,7 +1106,6 @@ JetC3	wadjet_type_III	64.77
 PprRE	argonaute_type_III	98.15
 HamA1	hachiman_type_I	99.38
 REase_II	RM_type_II	99.53
-beta	gop_beta_cll	23.17
 BrxA	DMS_other	18.07
 BrxA	brex_type_I	80.37
 REase_II	RM_type_II	99.84
@@ -1140,7 +1134,6 @@ KwaA	kiwa	99.04
 AbiEii	AbiE	99.68
 JetB1	wadjet_type_I	93.29
 JetB1	wadjet_other	6.71
-Hydrolase	Hydrolase-TM	86.24
 Csx3	cas_type_III-B	14.26
 Csx3	cas_type_III-D	26.44
 Csx3	cas_type_III-A	28.21
@@ -1208,7 +1201,6 @@ ShosA	PsyrTA	4.84
 Specificity_I	DMS_other	54.84
 Specificity_I	RM_type_I	44.81
 NDT_II-A	retron_II-A	99.83
-PD-T4-4_A	PD-T4-4	89.77
 MTase_III	DMS_other	25.17
 MTase_III	RM_type_II	10.42
 MTase_II	DMS_other	9.04
@@ -1218,7 +1210,6 @@ Cmr3	cas_type_III-B	82.4
 Cmr3	cas_type_other	17.6
 MTase_II	DMS_other	20.42
 MTase_II	RM_type_II	62.3
-RTasRmuC	DRT_class_II	10.18
 MTase_II	RM_type_II	75.04
 HTH_VI	DMS_other	6.36
 MTase_II	DMS_other	16.61
@@ -1288,7 +1279,6 @@ PprPIWI	argonaute_type_III	35.34
 Specificity_I	DMS_other	18.64
 Specificity_I	RM_type_I	81.36
 REase_II	RM_type_II	98.87
-AbiGi	AbiG	79.55
 TnsC	cas_type_I-F3	15.37
 Cas3d	cas_type_I-D	66.79
 Cas3d	cas_type_other	25.24
@@ -1338,7 +1328,6 @@ Cas6e	cas_type_I-E	91.09
 Tmn	tmn	100.0
 Cyclase	cbass_type_IIs	21.43
 Cyclase	cbass_type_I	73.81
-Aga_TIR-PNTD1-PNTD2	argonaute_type_I	93.82
 MTase_II	RM_type_II	93.03
 SngA	Shango	100.0
 Cas10d	cas_type_III-D	90.2
@@ -1618,7 +1607,6 @@ PbeC	PT_DndABCDE	59.8
 LmuA	Lamassu_Family	97.23
 Cmr3	cas_type_III-B	96.73
 Cmr3	cas_type_other	3.27
-C3a193	DMS_other	57.43
 KwaB	kiwa	98.73
 RmrT	RosmerTA	99.75
 JetD3	wadjet_other	4.06
@@ -1673,7 +1661,6 @@ Cas3g	cas_type_I-G	95.5
 Cas3g	cas_type_other	3.7
 Cyclase	cbass_type_IIs	45.36
 Cyclase	cbass_type_I	12.73
-PD-Lambda-3_B	PD-Lambda-3	33.16
 AbiEi	AbiE	94.15
 HORMA	cbass_type_III	97.33
 Effector	cbass_type_IIs	52.94
@@ -1699,7 +1686,6 @@ REase_II	RM_type_II	97.82
 AriB	Paris	48.09
 SoFic	SoFic	100.0
 Cas8g	cas_type_I-G	97.54
-C3a206	cas_type_III-H	14.52
 UzuA	Uzume	100.0
 REase_II	RM_type_II	100.0
 JetC3	wadjet_type_III	6.03
@@ -1775,7 +1761,6 @@ CARF1--CARF_HEPN	cas_type_other	12.28
 HORMA	cbass_type_III	96.49
 JetA3	wadjet_other	9.36
 JetA3	wadjet_type_III	90.64
-DitA	Aditi	90.29
 E1-E2	cbass_other	6.47
 E1-E2	cbass_type_II	74.41
 E1-E2	pycsar_other	5.29
@@ -1806,7 +1791,6 @@ Cas11e	cas_type_other	3.92
 JetD1	wadjet_type_I	95.48
 JetD1	wadjet_other	3.61
 DarT	darTG	98.19
-DdmD	DdmDE	85.2
 HTH_VI	DMS_other	10.91
 HTH_VI	DRT_other	7.27
 HTH_VI	RM_type_II	3.03
@@ -1948,7 +1932,6 @@ REase_II	RM_type_II	100.0
 Cmr3	cas_type_III-C	97.83
 PD-Lambda-2_A	PD-Lambda-2	99.64
 NsnC	Menshen	97.83
-RTasPolA	DRT_class_I	98.91
 JetB1	wadjet_type_I	27.9
 JetB1	wadjet_other	72.1
 Csm3	cas_type_III-D	50.18
@@ -1977,7 +1960,6 @@ CARF7--CARF_RelE	cas_type_other	40.07
 REase_II	RM_type_II	99.26
 BilD	ISG15-like_other	98.9
 DrmD	DMS_other	46.86
-RTasDUF1848	DRT_class_I	4.43
 mREase_IV	RM_type_IV	100.0
 GajB	gabija	96.67
 DdmE	DdmDE	99.26
@@ -2021,7 +2003,6 @@ MTase_II	DMS_other	59.69
 REase_MTase_IIG	RM_type_IIG	98.45
 pAgo	argonaute_type_II	43.8
 pAgo	argonaute_solo	54.26
-TniQ_V	cas_type_V-K	8.17
 ZorC1	zorya_other	13.23
 ZorC1	zorya_type_I	86.77
 Cas13b	cas_type_VI	96.11
@@ -2120,7 +2101,6 @@ PtuA1	septu_type_I	94.61
 REase_II	RM_type_II	100.0
 REase_II	RM_type_II	100.0
 AriB	Paris	96.25
-Dsr1	dsr1	94.56
 PD-T4-6	PD-T4-6	100.0
 JetD3	wadjet_other	97.07
 QatB	qatABCD	88.28
@@ -2288,7 +2268,6 @@ LmuB	Lamassu_other	7.62
 LmuB	Lamassu_Family	91.43
 AriA	HEC-01	11.48
 AriA	septu_other	5.74
-PD-Lambda-4_B	PD-Lambda-4	51.67
 PtuB1	septu_type_I	99.52
 Cyclase	cbass_type_II	81.34
 Cyclase	cbass_type_I	18.18
@@ -2313,7 +2292,6 @@ RT_III-A	retron_VII-A1	4.83
 RT_III-A	retron_IX	11.59
 WYL/Csx1	cas_type_III-B	89.86
 WYL/Csx1	cas_adaptation	3.86
-Cas7a	cas_type_I-A	85.99
 ShosT	ShosTA	100.0
 HamA1	hachiman_type_I	99.51
 PtuB1	septu_type_I	31.71
@@ -2435,7 +2413,6 @@ ThsA1	thoeris_type_I	92.9
 TniQ_IB	cas_type_I-B2	14.29
 REase_II	RM_type_II	100.0
 KwaA	kiwa	97.24
-C3a189	PD-T4-6	29.44
 PRTase_III-A	retron_III-A	97.78
 HEC-09A	HEC-09	96.09
 PprPIWI	argonaute_type_III	77.65
@@ -2447,7 +2424,6 @@ HTH_VI	RM_type_II	4.49
 DEDDh	cas_type_other	4.49
 ThsB1	thoeris_type_I	22.47
 PD-Lambda-5_A	PD-Lambda-5	98.88
-STAND_TPR	cas_type_other	95.51
 SngA	Shango	100.0
 LmuB	Lamassu_Family	25.99
 DEDDh	cas_type_other	5.08
@@ -2512,7 +2488,6 @@ CARF5--CARF	cas_type_III-D	14.29
 CARF5--CARF	cas_adaptation	3.57
 CARF5--CARF	cas_type_other	16.07
 REase_II	RM_type_II	97.62
-PD-Lambda-3_A	PD-Lambda-3	86.83
 LeoBC	Dynamins	88.02
 REase_II	DMS_other	37.13
 REase_II	RM_type_II	14.97
@@ -2555,7 +2530,6 @@ typeIV_DinG	cas_type_IV-A	93.25
 HTH_VI	DRT_other	8.59
 HTH_VI	DMS_other	35.58
 HTH_VI	RM_type_II	31.9
-DndA	DMS_other	92.59
 Cas2c	cas_type_III-D	7.41
 Cas2c	cas_adaptation	11.73
 Cas2c	cas_type_I-G	6.79
@@ -2685,7 +2659,6 @@ LmuA	Lamassu_Family	100.0
 TPR	cas_type_other	75.0
 AbiEi	AbiE	98.61
 AbiEii	AbiE	100.0
-PD-T4-10_B	PD-T4-10	79.72
 ZacC	Azaca	98.6
 Orf5	DMS_other	92.31
 LmuC	Lamassu_Family	97.2
@@ -2774,7 +2747,6 @@ GajA	gabija	100.0
 Cas8g	cas_type_I-G	94.03
 Cas8g	cas_type_other	5.97
 DitB	Aditi	100.0
-Aga_Nuclease	argonaute_other	12.03
 REase_II	RM_type_II	100.0
 PycC	pycsar_effector	74.24
 PycC	pycsar_unknown	25.76
@@ -2972,7 +2944,6 @@ HTH_VI	RM_type_II	6.25
 REase_II	RM_type_II	99.11
 Hydrolase-TM	Hydrolase-TM	98.21
 MkoB	Mokosh_TypeI	94.64
-RTasSbcB	DRT_other	7.21
 MTase_I	DMS_other	77.48
 CARF4--CARF_PDDEXK	cas_type_III-A	31.53
 CARF4--CARF_PDDEXK	cas_type_III-D	10.81
@@ -3035,7 +3006,6 @@ AbiEi	AbiE	98.1
 Cas8b	cas_type_I-B1	17.14
 Cmr1	cas_type_III-B	95.24
 Cmr1	cas_type_other	3.81
-C3a194	cas_type_other	3.85
 DpdF	ShosTA	13.46
 DpdF	DMS_other	25.0
 DpdF	PsyrTA	7.69
@@ -3404,7 +3374,6 @@ LmuA	Lamassu_Family	87.5
 SspG	DMS_other	100.0
 AbiEi	AbiE	100.0
 LeoA	Dynamins	95.0
-2TM-TIR	2TM-1TM-TIR	12.66
 ThsA1	thoeris_type_I	37.97
 ThsA1	thoeris_type_II	55.7
 ThsA1	thoeris_other	5.06
@@ -3685,7 +3654,6 @@ Cas11	cas_type_III-D	9.38
 Cas11	cas_type_other	90.62
 LmuC	Lamassu_other	18.75
 LmuC	Lamassu_Family	81.25
-tm_4	cas_type_VI	93.75
 ZorA3	zorya_other	100.0
 RmrT	RosmerTA	100.0
 DruB1	druantia_other	100.0
@@ -3995,7 +3963,6 @@ Mem_02	cas_type_other	25.93
 KwaB	kiwa	98.15
 NsnC	Menshen_other	3.7
 NsnC	Menshen	96.3
-CARF_m1--CARF_PIN	cas_type_other	18.52
 typeIV_Cas5	cas_type_IV-A	81.48
 typeIV_Cas5	cas_type_other	18.52
 DpdF	ShosTA	3.7
@@ -4029,7 +3996,6 @@ CARF	cas_type_III-D	30.19
 CARF	cas_adaptation	22.64
 CARF	cas_type_III-A	15.09
 CARF	cas_type_other	26.42
-CsaX	cas_type_I-A	96.23
 HTH_VI	RosmerTA	3.85
 PbeA	DMS_other	38.46
 HTH_VI	RM_type_II	3.85
@@ -4146,7 +4112,6 @@ typeIV_DinG	cas_type_other	8.16
 Cas11a	cas_type_I-A	95.92
 TGT	cbass_other	77.55
 TGT	cbass_type_IV	4.08
-1TM-TIR	2TM-1TM-TIR	8.33
 HTH_VI	DMS_other	4.17
 HEase	DMS_other	47.92
 MkoA	Mokosh_TypeI	83.33
@@ -4348,7 +4313,6 @@ CARF9--CARF_HEPN	cas_type_other	26.19
 Cas8b	cas_type_I-B1	100.0
 Aga_REase_Archaea	argonaute_type_I	100.0
 Cas8a	cas_type_I-A	100.0
-HamA2	Lamassu_Family	90.48
 PD-T4-6	Mokosh_TypeI	4.88
 PD-T4-6	PD-T4-6	95.12
 KwaA	kiwa	58.54
@@ -4417,7 +4381,6 @@ JAB	cbass_type_II	97.44
 Csx1/Csm6	cas_type_III-A	41.03
 Csx1/Csm6	cas_type_III-D	56.41
 DpdH	Dpd	76.92
-CARF6--CARF_CARF_CARF	cas_type_other	10.26
 Csm5	cas_type_III-A	89.74
 Csm5	cas_type_other	10.26
 Effector	pycsar_effector	92.31
@@ -4512,7 +4475,6 @@ CARF3--CARF	cas_type_other	11.11
 ZorA1	zorya_other	27.78
 GajA	gabija	83.33
 GajA	septu_type_I	5.56
-TnsB	cas_type_other	94.44
 NsnA	Menshen_other	5.56
 MTase_II	DMS_other	22.22
 MTase_II	RM_type_II	66.67
@@ -4751,7 +4713,6 @@ REase_II	RM_type_II	83.87
 Csm3	cas_type_III-D	74.19
 Csm3	cas_type_other	19.35
 RT_UG13a	DRT_class_I	90.32
-RTas1808	DRT_class_III	90.32
 PD-Lambda-2_A	PD-Lambda-2	96.77
 Csa3	viperin_tpr	32.26
 Csa3	viperin_other	64.52
@@ -4840,7 +4801,6 @@ Cmr1	cas_type_III-B	82.76
 Cmr1	cas_type_other	17.24
 Effector	cbass_type_IIs	89.66
 Effector	cbass_type_I	6.9
-RTas1299	DRT_class_III	89.66
 Cas5e	cas_type_other	13.79
 Cas5e	cas_type_I-E	86.21
 DrmD	DMS_other	50.0
@@ -5021,7 +4981,6 @@ Cas1	cas_type_other	24.0
 CARF1--CARF_HEPN	cas_type_III-A	84.0
 CARF1--CARF_HEPN	cas_type_other	16.0
 HEase	DMS_other	72.0
-Cas13c	cas_type_VI	88.0
 SP_VI	retron_VI	100.0
 SspD	DMS_other	96.0
 LeoBC	Dynamins	100.0
@@ -5243,7 +5202,6 @@ AbiLi	AbiL	28.57
 HTH_VI	DRT_other	9.52
 HTH_VI	DRT_other	9.52
 LmuB	Lamassu_Family	4.76
-nacht	gasdermin	47.62
 REase_II	RM_type_II	100.0
 PRTase_III-A	retron_III-A	90.48
 PRTase_III-A	DRT_other	9.52
@@ -6059,7 +6017,6 @@ STK_OB	TerY-P	100.0
 Cyclase	cbass_other	90.91
 PtuA1	septu_type_I	100.0
 PycTM	pycsar_effector	90.91
-CARF2--CARF_HEPN_CARF	cas_type_other	36.36
 SspD	DMS_other	54.55
 CARF	cas_type_III-D	100.0
 Csm3	cas_type_other	9.09
@@ -6164,7 +6121,6 @@ Cas11e	cas_type_I-E	100.0
 DrmB	DMS_other	100.0
 KwaB	kiwa	100.0
 chat	gasdermin	100.0
-C3a55	cas_type_III-B	40.0
 HEC-09A	HEC-09	80.0
 RdrA	RADAR	100.0
 LmuC	Lamassu_other	100.0
@@ -6306,7 +6262,6 @@ ZorE2	zorya_type_II	88.89
 MTase_II	DMS_other	33.33
 MTase_II	VSPR	22.22
 MTase_II	RM_type_II	22.22
-Aga_HEPN	argonaute_type_II	88.89
 WYL	cas_type_other	44.44
 WYL	cas_type_I-B1	44.44
 HEase	DMS_other	88.89
@@ -6597,7 +6552,6 @@ CARF9--CARF_HEPN	cas_type_III-A	71.43
 JetD1	wadjet_other	85.71
 DEDDh	cas_type_other	33.33
 UzuA	Uzume	66.67
-Cas12	cas_type_V	33.33
 Effector	cbass_type_I	33.33
 HEAT-ARM_XIII	retron_XIII	33.33
 PbeA	DMS_other	16.67
@@ -7336,7 +7290,6 @@ Cas3	cas_type_other	100.0
 Csx1	cas_type_III-D	100.0
 NsnA	Menshen	100.0
 Specificity_I	DMS_other	100.0
-Cas13	cas_type_other	100.0
 Hp3	3HP	100.0
 RmrT	RosmerTA	100.0
 LmuC	Lamassu_Family	100.0
@@ -7452,7 +7405,6 @@ GajA	gabija	66.67
 Cas7b	cas_type_other	100.0
 bSEFIR	SEFIR	66.67
 DrmD	DMS_other	66.67
-HamB2	hachiman_type_I	33.33
 Cas8e	cas_type_I-E	66.67
 Cas8e	cas_type_other	33.33
 2TM_IV	retron_IV	100.0
@@ -7467,7 +7419,6 @@ Csx1	cas_type_other	66.67
 WH_III-A	retron_III-A	100.0
 HTH_VI	DMS_other	66.67
 PtuB1	septu_type_I	100.0
-CARF_HEPN_mCpol	cas_type_III-D	66.67
 bSEFIR	SEFIR	66.67
 Csx1	cas_type_III-A	33.33
 Csx1	cas_type_other	66.67
