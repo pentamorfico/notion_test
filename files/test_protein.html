@@ -7,10 +7,11 @@
   <script src="https://cdn.rawgit.com/arose/ngl/v2.0.0-dev.31/dist/ngl.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      var stage = new NGL.Stage("viewport");
-      stage.loadFile("rcsb://1crn", {defaultRepresentation: true});
+      var stage = new NGL.Stage("viewport",{ backgroundColor: "#121212" } );
+      stage.loadFile("https://raw.githubusercontent.com/pentamorfico/notion_test/main/files/AF-A0A198WQH8-F1-model_v4.pdb", {defaultRepresentation: true});
+
     });
   </script>
-  <div id="viewport" style="width:400px; height:300px;"></div>
+  <div id="viewport" style="width:900px; height:700px;"></div>
 </body>
 </html>
