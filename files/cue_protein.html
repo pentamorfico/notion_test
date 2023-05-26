@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <script src="https://cdn.rawgit.com/arose/ngl/v2.0.0-dev.31/dist/ngl.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var stage = new NGL.Stage("viewport",{ backgroundColor: "#121212" } );
+      stage.loadFile("https://raw.githubusercontent.com/pentamorfico/notion_test/main/files/AF-A0A0A0FLG5-F1-model_v4.pdb", {defaultRepresentation: true});
+
+    });
+  </script>
+  <div id="viewport" style="width:900px; height:700px;"></div>
+</body>
+</html>
