@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CGV Viewer</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cgview/dist/cgview.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cgview/dist/cgview.css">
+    <style>
+        body {
+            font-family: 'Helvetica', sans-serif;
+        }
+        #my-viewer {
+            height: 500px;
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div id="my-viewer"></div>
+    <script>
+ json = {
+  "cgview": {
+    "version": "1.1.0",
+    "sequence": {
+      "length": 10000
+    },
+    "features": [
+      {
+        "start": 100,
+        "stop": 3000,
+        "name": "F1",
+        "source": "json-feature",
+        "legend": "CDS"
+      },
+      {
+        "start": 4000,
+        "stop": 8000,
+        "name": "R1",
+        "source": "json-feature",
+        "legend": "CDS",
+        "strand": -1
+      },
+      {
+        "start": 6000,
+        "stop": 9000,
+        "name": "F2",
+        "source": "json-feature",
+        "legend": "Other"
+      }
+    ],
+    "legend": {
+      "items": [
+        {
+          "name": "CDS",
+          "swatchColor": "rgb(230, 50, 60)",
+          "decoration": "arrow"
+        },
+        {
+          "name": "Other",
+          "swatchColor": "rgb(60, 150, 210)",
+          "decoration": "arrow"
+        }
+      ]
+    },
+    "tracks": [
+      {
+        "name": "Features",
+        "dataType": 'feature',
+        "dataMethod": 'source',
+        "dataKeys": 'json-feature'
+      }
+    ]
+  }
+}
+
+
+cgv = new CGV.Viewer('#my-viewer', {
+  height: 500,
+  width: 500,
+});
+cgv.io.loadJSON(json);
+
+cgv.draw();
+    </script>
+</body>
+</html>
