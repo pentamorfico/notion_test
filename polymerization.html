@@ -41,11 +41,14 @@
     }
 
     .base {
-      font-size: 28px;
-      width: 30px;
-      text-align: center;
-      position: relative;
+    font-size: 28px;
+    width: 35px;
+    text-align: center;
+    position: relative;
+    font-weight: bold; /* 👈 ADD THIS LINE */
+    font: Helvetica;
     }
+
 
     .template-base {
       color: #3366cc;
@@ -99,113 +102,122 @@
     <div class="strand-container" id="strandContainer"></div>
     <div class="enzyme" id="polymerase">RT</div>
   </div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const urlParams = new URLSearchParams(window.location.search);
+    const userSequence = urlParams.get('sequence') || 'ATGCXYZ123';
+    const templateSequence = userSequence.toUpperCase();
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const urlParams = new URLSearchParams(window.location.search);
-      const userSequence = urlParams.get('sequence') || 'ATGCXYZ123';
-      const templateSequence = userSequence.toUpperCase();
+    const complementaryBase = {
+      'U': 'A',
+    };
 
-      const complementaryBase = {
-        'U': 'A',
-      };
+    const strandContainer = document.getElementById('strandContainer');
+    const polymerase = document.getElementById('polymerase');
+    const basePairs = [];
 
-      const strandContainer = document.getElementById('strandContainer');
-      const polymerase = document.getElementById('polymerase');
-      const basePairs = [];
+    let animatableIndexes = [];
+    let currentAnimIndex = 0;
 
-      let animatableIndexes = [];
-      let currentAnimIndex = 0;
+    function initializeStrands() {
+      strandContainer.innerHTML = '';
+      animatableIndexes = [];
 
-      function initializeStrands() {
-        strandContainer.innerHTML = '';
-        animatableIndexes = [];
+      for (let i = 0; i < templateSequence.length; i++) {
+        const rawChar = templateSequence[i];
+        const upperBase = rawChar.toUpperCase();
+        const isSpace = rawChar === ' ';
 
-        for (let i = 0; i < templateSequence.length; i++) {
-          const rawChar = templateSequence[i];
-          const upperBase = rawChar.toUpperCase();
-          const isSpace = rawChar === ' ';
+        const baseElement = document.createElement('div');
+        baseElement.className = 'base-pair';
+        baseElement.id = `pair-${i}`;
 
-          const baseElement = document.createElement('div');
-          baseElement.className = 'base-pair';
-          baseElement.id = `pair-${i}`;
+        const compBase = document.createElement('div');
+        compBase.className = 'base complementary-base';
+        compBase.id = `comp-${i}`;
+        compBase.textContent = isSpace ? '' : (complementaryBase[upperBase] || rawChar);
 
-          const compBase = document.createElement('div');
-          compBase.className = 'base complementary-base';
-          compBase.id = `comp-${i}`;
-          compBase.textContent = isSpace ? '' : (complementaryBase[upperBase] || rawChar);
+        const bond = document.createElement('div');
+        bond.className = 'bond';
+        bond.id = `bond-${i}`;
 
-          const bond = document.createElement('div');
-          bond.className = 'bond';
-          bond.id = `bond-${i}`;
-
-          if (isSpace) {
-            compBase.style.visibility = 'hidden';
-            bond.style.visibility = 'hidden';
-          } else {
-            animatableIndexes.push(i);
-          }
-
-          const templateBase = document.createElement('div');
-          templateBase.className = 'base template-base';
-          templateBase.textContent = rawChar;
-
-          baseElement.appendChild(compBase);
-          baseElement.appendChild(bond);
-          baseElement.appendChild(templateBase);
-          strandContainer.appendChild(baseElement);
-          basePairs.push(baseElement);
+        if (isSpace) {
+          compBase.style.visibility = 'hidden';
+          bond.style.visibility = 'hidden';
+        } else {
+          animatableIndexes.push(i);
         }
 
-        setTimeout(() => {
-          positionPolymerase(animatableIndexes[0] || 0);
-        }, 100);
+        const templateBase = document.createElement('div');
+        templateBase.className = 'base template-base';
+        templateBase.textContent = rawChar;
+
+        baseElement.appendChild(compBase);
+        baseElement.appendChild(bond);
+        baseElement.appendChild(templateBase);
+        strandContainer.appendChild(baseElement);
+        basePairs.push(baseElement);
       }
 
-      function positionPolymerase(index) {
-        const basePair = document.getElementById(`pair-${index}`);
-        if (!basePair) return;
-
-        const basePairRect = basePair.getBoundingClientRect();
-        const containerRect = strandContainer.getBoundingClientRect();
-        const basePairLeft = basePairRect.left - containerRect.left;
-
-        polymerase.style.left = `${basePairLeft}px`;
-        polymerase.dataset.currentIndex = index;
-      }
-
-      function addComplementaryBase(animIndex) {
-        if (animIndex >= animatableIndexes.length) return;
-        currentAnimIndex = animIndex;
-
-        const seqIndex = animatableIndexes[animIndex];
-        positionPolymerase(seqIndex);
-
-        const compElement = document.getElementById(`comp-${seqIndex}`);
-        const bondElement = document.getElementById(`bond-${seqIndex}`);
-
-        setTimeout(() => {
-          compElement.classList.add('visible');
-          bondElement.classList.add('visible-bond');
-
-          const nextDelay = 200 + Math.random() * 150; // Randomized for realism
-
-          setTimeout(() => {
-            addComplementaryBase(animIndex + 1);
-          }, nextDelay);
-        }, 150);
-      }
-
-      window.addEventListener('resize', function () {
-        const index = parseInt(polymerase.dataset.currentIndex || "0", 10);
-        positionPolymerase(index);
-      });
-
-      initializeStrands();
       setTimeout(() => {
-        addComplementaryBase(0);
-      }, 1000);
+        positionPolymerase(animatableIndexes[0] || 0);
+      }, 100);
+    }
+
+    function positionPolymerase(index) {
+      const basePair = document.getElementById(`pair-${index}`);
+      if (!basePair) return;
+
+      const basePairRect = basePair.getBoundingClientRect();
+      const containerRect = strandContainer.getBoundingClientRect();
+      const basePairLeft = basePairRect.left - containerRect.left;
+
+      polymerase.style.left = `${basePairLeft}px`;
+      polymerase.dataset.currentIndex = index;
+    }
+
+    function addComplementaryBase(animIndex) {
+      if (animIndex >= animatableIndexes.length) {
+        // Animation complete — reset after 5 seconds
+        setTimeout(() => {
+          initializeStrands();
+          setTimeout(() => {
+            addComplementaryBase(0);
+          }, 1000);
+        }, 5000);
+        return;
+      }
+
+      currentAnimIndex = animIndex;
+      const seqIndex = animatableIndexes[animIndex];
+      positionPolymerase(seqIndex);
+
+      const compElement = document.getElementById(`comp-${seqIndex}`);
+      const bondElement = document.getElementById(`bond-${seqIndex}`);
+
+      setTimeout(() => {
+        compElement.classList.add('visible');
+        bondElement.classList.add('visible-bond');
+
+        const nextDelay = 200 + Math.random() * 150;
+
+        setTimeout(() => {
+          addComplementaryBase(animIndex + 1);
+        }, nextDelay);
+      }, 150);
+    }
+
+    window.addEventListener('resize', function () {
+      const index = parseInt(polymerase.dataset.currentIndex || "0", 10);
+      positionPolymerase(index);
     });
-  </script>
+
+    initializeStrands();
+    setTimeout(() => {
+      addComplementaryBase(0);
+    }, 1000);
+  });
+</script>
+
 </body>
 </html>
