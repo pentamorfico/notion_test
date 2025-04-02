@@ -41,8 +41,8 @@
     }
 
     .base {
-    font-size: 28px;
-    width: 35px;
+    font-size: 40px;
+    width: 25px;
     text-align: center;
     position: relative;
     font-weight: bold; /* 👈 ADD THIS LINE */
@@ -105,7 +105,7 @@
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     const urlParams = new URLSearchParams(window.location.search);
-    const userSequence = urlParams.get('sequence') || 'ATGCXYZ123';
+    const userSequence = urlParams.get('sequence') || 'ATGCXYZ123 ATGCXYZ123';
     const templateSequence = userSequence.toUpperCase();
 
     const complementaryBase = {
