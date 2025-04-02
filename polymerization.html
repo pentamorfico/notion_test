@@ -103,15 +103,11 @@
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       const urlParams = new URLSearchParams(window.location.search);
-      const userSequence = urlParams.get('sequence') || 'ATGCGTACGTAGCTAGCTAGCTAGCAT';
-      const templateSequence = userSequence.toUpperCase().replace(/[^ATGC]/g, 'N'); // sanitize
+      const userSequence = urlParams.get('sequence') || 'ATGCXYZ123';
+      const templateSequence = userSequence.toUpperCase();
 
       const complementaryBase = {
-        'A': 'T',
-        'T': 'A',
-        'G': 'C',
-        'C': 'G',
-        'N': 'N'
+        'U': 'A',
       };
 
       const strandContainer = document.getElementById('strandContainer');
@@ -127,8 +123,7 @@
 
         for (let i = 0; i < templateSequence.length; i++) {
           const rawChar = templateSequence[i];
-          const base = rawChar === 'U' ? 'T' : rawChar;
-          const upperBase = base.toUpperCase();
+          const upperBase = rawChar.toUpperCase();
           const isSpace = rawChar === ' ';
 
           const baseElement = document.createElement('div');
@@ -138,11 +133,12 @@
           const compBase = document.createElement('div');
           compBase.className = 'base complementary-base';
           compBase.id = `comp-${i}`;
-          compBase.textContent = isSpace ? '' : (complementaryBase[upperBase] || base);
+          compBase.textContent = isSpace ? '' : (complementaryBase[upperBase] || rawChar);
 
           const bond = document.createElement('div');
           bond.className = 'bond';
           bond.id = `bond-${i}`;
+
           if (isSpace) {
             compBase.style.visibility = 'hidden';
             bond.style.visibility = 'hidden';
@@ -192,7 +188,7 @@
           compElement.classList.add('visible');
           bondElement.classList.add('visible-bond');
 
-          const nextDelay = 200 + Math.random() * 150;
+          const nextDelay = 200 + Math.random() * 150; // Randomized for realism
 
           setTimeout(() => {
             addComplementaryBase(animIndex + 1);
@@ -213,4 +209,3 @@
   </script>
 </body>
 </html>
-
